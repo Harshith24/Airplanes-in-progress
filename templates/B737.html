@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html style = "background-color: lightblue">
+    <head>
+        <title>Boeing 737</title>
+    </head>
+    <body>
+        <div>
+            <h1 style = "text-align: center">Boeing 737 Series</h1> <hr>
+            <table border="1" style = "text-align: center; position: relative; top:10px; width:100%">
+                <thead>
+                    <td><strong>Type</strong></td>
+                    <td><strong>Passengers</strong></td>
+                    <td><strong>Range(miles)</strong></td>
+                    <td><strong>Weight(empty lbs)</strong></td>
+                    <td><strong>MPG</strong></td>
+                </thead>
+                {% for row in rows %}
+                    <tr>
+                        <td>{{row["Type"]}}</td>
+                        <td>{{row["Passengers"]}}</td>
+                        <td>{{row["Range"]}}</td>
+                        <td>{{row["Weight"]}}</td>
+                        <td>{{row["MPG"]}}</td>
+                    </tr>
+                {% endfor %}
+            </table>
+            <!--<a href="list.html" style = "position: absolute; left:30px; top:300px;">View</a>-->
+            <a href="update.html"><button style="position: absolute; left:30px; top:27px;">Update</button></a>
+            <a href="new.html"><button class = "n" style="position:absolute; left:30px; top:4px;">Insert Data</button></a>
+        </div>
+    </body>
+</html>

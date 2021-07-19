@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Update information</title>
+    </head>
+    <body>
+        <h1>Update Information</h1>
+        <form action="{{url_for('update')}}" method="POST">
+                <label for="type">Type:</label> <br>
+                <input type="text" name = "type" tabindex="1"><br>
+        
+                <label for="passengers">Passengers:</label> <br>
+                <input type="text" name = "passengers" tabindex="2" ><br>
+                
+                <label for="Range">Range:</label> <br>
+                <input type="text" name="Range" tabindex="3"><br>
+        
+                <label for="Weight">Weight:</label> <br>
+                <input type="text" name="Weight" id="Weight" tabindex="4"><br>
+        
+                <label for="MPG">MPG:</label> <br>
+                <input type="text" name="MPG" tabindex="5"><br>
+        
+                <input type="submit" value="submit">
+        </form>
+        
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>list</title>
+    </head>
+    <body>
+        <table border="1">
+            <thead>
+                <td>Type</td>
+                <td>Passengers</td>
+                <td>Range(miles)</td>
+                <td>Weight(empty lbs)</td>
+                <td>MPG</td>
+            </thead>
+            {% for row in rows %}
+                <tr>
+                    <td>{{row["Type"]}}</td>
+                    <td>{{row["Passengers"]}}</td>
+                    <td>{{row["Range"]}}</td>
+                    <td>{{row["Weight"]}}</td>
+                    <td>{{row["MPG"]}}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>
